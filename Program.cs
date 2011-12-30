@@ -9,19 +9,15 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {}
-            static string getrandom(int length)        
-    {          
-            string Chars = "qwertyuiopasdfghjklzxcvbnm";
-            string RESULT = "";
-
-            for (int j = 0; j <= length-1; j++)
-            {System.Random number = new System.Random((int)DateTime.Now.Ticks);
-             int rnd = number.Next(25);
-             RESULT += Convert.ToChar(Chars[rnd]);}
-
-            return RESULT;
-
-
+        static string GetRandom(int length)   
+        {
+            Random rnd = new Random();
+            string res = "";
+            for (int ctr = 0; ctr <= length; ctr++)
+            {
+                res += Convert.ToChar(rnd.Next(65, 91));
+            }
+            return res;
         }
     } 
 }
