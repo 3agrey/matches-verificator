@@ -9,13 +9,13 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {}
-        static string GetRandom(int length)   
+        static string GetRandom(int length)
         {
             Random rnd = new Random();
-            string res = "";
+            StringBuilder res = new StringBuilder("");
             for (int ctr = 0; ctr <= length; ctr++)
             {
-                res += Convert.ToChar(rnd.Next(65, 91));
+                res.Append(Convert.ToChar(rnd.Next(65, 91)));
             }
             return res;
         }
