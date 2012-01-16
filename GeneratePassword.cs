@@ -12,12 +12,16 @@ namespace GeneratePassword
         public static string Generate(int length)
         {
             Random rnd = new Random();
-            char[] res = null;
+            char tempchar;
+            StringBuilder res = new StringBuilder("");
             for (int ctr = 0; ctr <= length; ctr++)
             {
-                res= new char[rnd.Next(65,91)];
+                tempchar = (Convert.ToChar(rnd.Next(65, 91)));
+                res.Append(tempchar);
             }
-            return new string(res);
+            return res;
         }
+        static void Main(string[] args)
+        {}
     }
 }
