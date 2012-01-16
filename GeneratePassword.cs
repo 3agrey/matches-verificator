@@ -7,9 +7,8 @@ namespace GeneratePassword
 {
     public class RandomPassword
     {
-        public static int length = 10;
-
-        public static string Generate(int length)
+       
+        public static string Generate(int length,ref string result)
         {
             Random rnd = new Random();
             char tempchar;
@@ -18,11 +17,16 @@ namespace GeneratePassword
             {
                 tempchar = (Convert.ToChar(rnd.Next(65, 91)));
                 res.Append(tempchar);
-                
+                result = res.ToString();
             }
-            return res.ToString ();
+            return result;
         }
-        static void Main(string[] args)
-        {}
+        static void Main()
+        {
+            string password = ("");
+            Generate(10,ref password);
+            System.Console.WriteLine(password);
+            System.Console.ReadKey();
+        }
     }
 }
