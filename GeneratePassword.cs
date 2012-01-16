@@ -21,10 +21,14 @@ namespace GeneratePassword
             }
             return result;
         }
+        
+    }
+    public class ProgramBody
+    {
         static void Main()
         {
             string password = ("");
-            Generate(10,ref password);
+            RandomPassword.Generate(10, ref password);
             System.Console.WriteLine(password);
             System.Console.ReadKey();
         }
