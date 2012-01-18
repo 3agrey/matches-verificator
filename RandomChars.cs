@@ -14,7 +14,7 @@ namespace Function
             char tempchar;
             string result = ("");
             StringBuilder res = new StringBuilder("");
-            for (int ctr = 0; ctr <= length; ctr++)
+            for (int ctr = 0; ctr < length; ctr++)
             {
                 tempchar = (Convert.ToChar(rnd.Next(65, 91)));
                 res.Append(tempchar);
