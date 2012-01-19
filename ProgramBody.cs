@@ -11,6 +11,7 @@ namespace Program
         {
             static void Main()
             {
+                int z = 0;
                 bool b = false;
                 int length = 10;
                 Random rnd = new Random();
@@ -27,8 +28,14 @@ namespace Program
                 for (int ctr = 0; ctr < 100; ctr++)
                 {
                     test = Function.RandomChars.Generate(length);
-
-                    Console.WriteLine(String.Compare(test, 1, a, 1, 1));
+                    for (int c = 0; c <= lengthchars; c++)
+                    {
+                        if (String.Compare(test, z, a, c, 1) != 0)
+                        {
+                            b = true;
+                        }
+                    }
+                    Console.WriteLine(b);
                 }
                 for (int ctr = 0; ctr < length; ctr++)
                 {
