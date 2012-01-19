@@ -11,12 +11,30 @@ namespace Program
         {
             static void Main()
             {
-                String test1 = Function.RandomChars.Generate(0);
-                String test2 = Function.RandomChars.Generate(1);
-                String test3 = Function.RandomChars.Generate(15);
-                Console.WriteLine(test1.Length == 0);
-                Console.WriteLine(test2.Length == 1);
-                Console.WriteLine(test3.Length == 15);
+                bool b = false;
+                int length = 10;
+                Random rnd = new Random();
+                int temp;
+                String test;
+                string a = ("ABCDEFGHIJKLMNOPQESTUVWXYZ");
+                int lengthchars = 25;
+                for (int ctr = 0; ctr < length; ctr++)
+                {
+                    temp = rnd.Next(0, 20);
+                    test = Function.RandomChars.Generate(temp);
+                    Console.WriteLine(test.Length == temp);
+                }
+                for (int ctr = 0; ctr < 100; ctr++)
+                {
+                    test = Function.RandomChars.Generate(length);
+
+                    Console.WriteLine(String.Compare(test, 1, a, 1, 1));
+                }
+                for (int ctr = 0; ctr < length; ctr++)
+                {
+                    test = Function.RandomChars.Generate(length);
+                    Console.WriteLine();
+                }
                 Console.ReadKey();
             }
         }
