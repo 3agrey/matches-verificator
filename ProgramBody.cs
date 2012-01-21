@@ -16,7 +16,7 @@ namespace Program
                 Random rnd = new Random();
                 int temp;
                 String test;
-                string a = ("ABCDEFGHIJKLMNOPQESTUVWXYZ");
+                string a = ("qwertyuiopasdfghjklzxcvbnm");
                 int lengthchars = 25;
                 Console.WriteLine(0);
                 Console.WriteLine(Function.RandomChars.Generate(0).Length == 0);
@@ -38,6 +38,7 @@ namespace Program
                 for (int ctr = 0; ctr < length; ctr++)
                 {
                     test = Function.RandomChars.Generate(length);
+                    Console.WriteLine(test);
                     for (int z = 0; z < length; z++)
                     {
                         for (int c = 0; c < lengthchars; c++)

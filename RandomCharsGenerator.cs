@@ -16,7 +16,7 @@ namespace Function
             StringBuilder res = new StringBuilder("");
             for (int ctr = 0; ctr < length; ctr++)
             {
-                tempchar = (Convert.ToChar(rnd.Next(65, 91)));
+                tempchar = (Convert.ToChar(rnd.Next(97, 122)));
                 res.Append(tempchar);
                 result = res.ToString();
             }
