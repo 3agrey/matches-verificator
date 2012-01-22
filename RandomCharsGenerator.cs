@@ -1,25 +1,25 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Function
+namespace Ppc.GeneratePassword
 {
     public class RandomChars
     {
-
+        //todo: make an isntanse method, not static
         public static string Generate(int length)
         {
             Random rnd = new Random();
-            char tempchar;
-            string result = ("");
-            StringBuilder res = new StringBuilder("");
-            for (int ctr = 0; ctr < length; ctr++)
+            StringBuilder res = new StringBuilder();
+            for (int i = 0; i < length; i++)
             {
-                tempchar = (Convert.ToChar(rnd.Next(97, 122)));
+                char tempchar = (Convert.ToChar(rnd.Next(97, 122)));
                 res.Append(tempchar);
-                result = res.ToString();
+                //todo: do not use statements like below. ToString should be called only once.
+                //result = res.ToString();
             }
+            string result = res.ToString();
             return result;
         }
     }
