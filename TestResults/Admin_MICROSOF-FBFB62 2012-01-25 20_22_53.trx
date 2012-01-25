@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="219a6b4e-cb3b-413e-8b2b-3427aac92f3f" name="Admin@MICROSOF-FBFB62 2012-01-25 20:22:53" runUser="MICROSOF-FBFB62\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="1f122128-7965-4302-8e5d-f2e67f80cfd9">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_MICROSOF-FBFB62 2012-01-25 20_22_53">
+      <DeploymentItem filename="C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-25T20:22:53.3750000+02:00" queuing="2012-01-25T20:22:55.6093750+02:00" start="2012-01-25T20:22:55.7656250+02:00" finish="2012-01-25T20:23:03.1250000+02:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GenerateTest" storage="c:\documents and settings\admin\мои документы\visual studio 2010\projects\consoleapplication1\randomcharstest\bin\debug\randomcharstest.dll" id="5bc65ee8-992f-0b52-1108-b61d699d6221">
+      <Execution id="430dec7c-383f-4a59-ada6-739e5c116922" />
+      <TestMethod codeBase="C:/Documents and Settings/Admin/мои документы/visual studio 2010/Projects/ConsoleApplication1/RandomCharsTest/bin/Debug/RandomCharsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RandomCharsTest.RandomCharsTest, RandomCharsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GenerateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5bc65ee8-992f-0b52-1108-b61d699d6221" executionId="430dec7c-383f-4a59-ada6-739e5c116922" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="430dec7c-383f-4a59-ada6-739e5c116922" testId="5bc65ee8-992f-0b52-1108-b61d699d6221" testName="GenerateTest" computerName="MICROSOF-FBFB62" duration="00:00:05.9232900" startTime="2012-01-25T20:22:55.8593750+02:00" endTime="2012-01-25T20:23:03.0312500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="430dec7c-383f-4a59-ada6-739e5c116922">
+      <Output>
+        <ErrorInfo>
+          <Message>Ошибка в Assert.Inconclusive. Проверьте правильность этого метода теста.</Message>
+          <StackTrace>   в RandomCharsTest.RandomCharsTest.GenerateTest() в C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\RandomCharsTest.cs:строка 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
