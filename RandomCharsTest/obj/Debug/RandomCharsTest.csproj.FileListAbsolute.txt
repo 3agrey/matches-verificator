@@ -1,7 +1,0 @@
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\bin\Debug\RandomCharsTest.dll
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\bin\Debug\RandomCharsTest.pdb
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\bin\Debug\ConsoleApplication2.exe
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\bin\Debug\ConsoleApplication2.pdb
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\obj\Debug\RandomCharsTest.dll
-C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ConsoleApplication1\RandomCharsTest\obj\Debug\RandomCharsTest.pdb

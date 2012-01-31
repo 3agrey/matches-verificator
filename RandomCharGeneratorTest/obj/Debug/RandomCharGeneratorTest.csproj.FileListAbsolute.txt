@@ -1,0 +1,7 @@
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\bin\Debug\RandomCharGeneratorTest.dll
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\bin\Debug\RandomCharGeneratorTest.pdb
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\bin\Debug\ProgramBody.exe
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\bin\Debug\ProgramBody.pdb
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\obj\Debug\RandomCharGeneratorTest.dll
+C:\Documents and Settings\Admin\мои документы\visual studio 2010\Projects\ProgramBody\RandomCharGeneratorTest\obj\Debug\RandomCharGeneratorTest.pdb
