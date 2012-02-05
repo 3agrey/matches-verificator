@@ -11,28 +11,28 @@ namespace ProgramBodyTest
 		public void Test_Zero_Password ()
 		{
 			string actual = RandomChars.Generate(0);
-            Assert.AreEqual(0, actual.Length, "testing for 1 symbol password failed");
+			Assert.AreEqual(0, actual.Length, "testing for 1 symbol password failed");
 		}
 		
 		[Test()]
 		public void Test_Password_Eq1 ()
 		{
 			string actual = RandomChars.Generate(1);
-            Assert.AreEqual(1, actual.Length, "testing for 1 symbol password failed");
+			Assert.AreEqual(1, actual.Length, "testing for 1 symbol password failed");
 		}
 		
 		[Test()]
 		public void Test_Password_Eq15 ()
 		{
 			string actual = RandomChars.Generate(15);
-            Assert.AreEqual(15, actual.Length, "testing for 15 symbol password failed");
+			Assert.AreEqual(15, actual.Length, "testing for 15 symbol password failed");
 		}
 		
 		[Test()]
 		public void Test_Password_Eq1024 ()
 		{
 			string actual = RandomChars.Generate(1024);
-            Assert.AreEqual(1024, actual.Length, "testing for 1024 symbol password failed");
+			Assert.AreEqual(1024, actual.Length, "testing for 1024 symbol password failed");
 		}
 
 		[Test()]
