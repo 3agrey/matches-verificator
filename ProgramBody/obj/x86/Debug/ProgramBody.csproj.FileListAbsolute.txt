@@ -1,5 +1,0 @@
-c:\documents and settings\admin\мои документы\visual studio 2010\Projects\ProgramBody\ProgramBody\bin\Debug\ProgramBody.exe
-c:\documents and settings\admin\мои документы\visual studio 2010\Projects\ProgramBody\ProgramBody\bin\Debug\ProgramBody.pdb
-c:\documents and settings\admin\мои документы\visual studio 2010\Projects\ProgramBody\ProgramBody\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\documents and settings\admin\мои документы\visual studio 2010\Projects\ProgramBody\ProgramBody\obj\x86\Debug\ProgramBody.exe
-c:\documents and settings\admin\мои документы\visual studio 2010\Projects\ProgramBody\ProgramBody\obj\x86\Debug\ProgramBody.pdb
