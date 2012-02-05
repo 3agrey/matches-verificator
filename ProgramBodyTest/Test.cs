@@ -34,6 +34,14 @@ namespace ProgramBodyTest
 			string actual = RandomChars.Generate(1024);
             Assert.AreEqual(1024, actual.Length, "testing for 1024 symbol password failed");
 		}
+
+        [Test()]
+        public void Test_Bad_Param ()
+        {
+            string actual = RandomChars.Generate(-1);
+            Assert.AreNotEqual(-1, actual.Length, "length should not be less than zero");
+            Assert.AreEqual(0, actual.Length, "actual length should be 0");
+        }
 	}
 }
 
