@@ -13,6 +13,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramBodyTest", "ProgramBodyTest\ProgramBodyTest.csproj", "{52DEE289-38B4-48CC-9571-AC38B8EF4094}"
 EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ProgramBody.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -22,6 +25,16 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|x86.ActiveCfg = Debug|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|x86.Build.0 = Debug|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Any CPU.ActiveCfg = Release|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|x86.ActiveCfg = Release|x86
+		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|x86.Build.0 = Release|x86
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -34,26 +47,11 @@ Global
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Release|x86.ActiveCfg = Release|Any CPU
 		{52DEE289-38B4-48CC-9571-AC38B8EF4094}.Release|x86.Build.0 = Release|Any CPU
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|x86.ActiveCfg = Debug|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Debug|x86.Build.0 = Debug|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Any CPU.ActiveCfg = Release|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|Mixed Platforms.Build.0 = Release|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|x86.ActiveCfg = Release|x86
-		{D930A97B-CED0-4869-9162-68037DDE60E1}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ProgramBody\ProgramBody.csproj
-	EndGlobalSection
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = ProgramBody.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ProgramBody\ProgramBody.csproj
 	EndGlobalSection
 EndGlobal

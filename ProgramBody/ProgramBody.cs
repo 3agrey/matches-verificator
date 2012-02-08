@@ -9,43 +9,40 @@ namespace Ppc.GeneratePassword
     {
         public static void Main(string[] args)
         {
-            if (args == null || args.Length != 1)
-            {
-                Console.WriteLine("typical usage: generatepwd.exe 13");
-                return;
-            }
-            int passwordLength = int.Parse(args[0]);
-            string result = RandomChars.Generate(passwordLength);
-            Console.WriteLine(result);
+            int MatchesNumber = 0;
 
-            //todo: remove all this rubbish; use unit tests instead
-            /*
-                   
-            for (int ctr = 0; ctr < length; ctr++)
+            Console.WriteLine("Enter first string length:");
+            int FirstStringLength = Convert.ToInt32(Console.ReadLine());
+            while (FirstStringLength <= 0)
             {
-                temp = rnd.Next(-10, -2);
-                Console.WriteLine(temp);
-                test = Function.RandomChars.Generate(temp);
-                Console.WriteLine(test.Length == temp);
+                Console.WriteLine("string length shoul be more than zero");
+                FirstStringLength = Convert.ToInt32(Console.ReadLine());
             }
-            for (int ctr = 0; ctr < length; ctr++)
+
+            Console.WriteLine("Enter second string length:");
+            int SecondStringLength = Convert.ToInt32(Console.ReadLine());
+            while (SecondStringLength <= 0)
             {
-                test = Function.RandomChars.Generate(length);
-                Console.WriteLine(test);
-                for (int z = 0; z < length; z++)
+                Console.WriteLine("string length shoul be more than zero");
+                SecondStringLength = Convert.ToInt32(Console.ReadLine());
+            }
+
+            string FirstString = RandomChars.Generate(FirstStringLength);
+            string SecondString = RandomChars.Generate(SecondStringLength);
+
+            for (int z = 0; z < FirstStringLength; z++)
+            {
+                for (int c = 0; c < SecondStringLength; c++)
                 {
-                    for (int c = 0; c < lengthchars; c++)
+                    if (String.Compare(FirstString, z, SecondString, c, 1) == 0)
                     {
-                        if (String.Compare(test, z, a, c, 1) == 0)
-                        {
-                            b = true;
-                        }
+                        MatchesNumber++;
                     }
                 }
-                Console.WriteLine(b);
             }
+            var MatchesPersent = (MatchesNumber / (FirstStringLength + SecondStringLength));
+            Console.WriteLine("Matches persent is:{0}", MatchesPersent);
             Console.ReadKey();
-            */
         }
     }
 }
