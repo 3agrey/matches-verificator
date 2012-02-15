@@ -9,7 +9,7 @@ namespace Ppc.GeneratePassword
     {
         public static void Main(string[] args)
         {
-            int MatchesNumber = 0;
+            double MatchesNumber = 0;
 
             Console.WriteLine("Enter first string length:");
             int FirstStringLength = Convert.ToInt32(Console.ReadLine());
@@ -27,21 +27,23 @@ namespace Ppc.GeneratePassword
                 SecondStringLength = Convert.ToInt32(Console.ReadLine());
             }
 
-            string FirstString = RandomChars.Generate(FirstStringLength);
-            string SecondString = RandomChars.Generate(SecondStringLength);
+            RandomCharsGenerator FirstString = new RandomCharsGenerator(FirstStringLength);
+            RandomCharsGenerator SecondString = new RandomCharsGenerator(SecondStringLength);
 
             for (int z = 0; z < FirstStringLength; z++)
             {
                 for (int c = 0; c < SecondStringLength; c++)
                 {
-                    if (String.Compare(FirstString, z, SecondString, c, 1) == 0)
+                    if (String.Compare(Convert.ToString(FirstString), z, Convert.ToString(SecondString), c, 1) == 0)
                     {
                         MatchesNumber++;
                     }
                 }
             }
-            var MatchesPersent = (MatchesNumber / (FirstStringLength + SecondStringLength));
-            Console.WriteLine("Matches persent is:{0}", MatchesPersent);
+
+            double MatchesPersent = (MatchesNumber / (FirstStringLength + SecondStringLength));
+            Console.WriteLine("Matches persent is:");
+            Console.Write(MatchesPersent);
             Console.ReadKey();
         }
     }
